@@ -1,0 +1,25 @@
+==================================================
+常用组件：
+	HSSFWorkbook                      excel的文档对象
+	HSSFSheet                         excel的表单
+	HSSFRow                           excel的行
+	HSSFCell                          excel的格子单元
+	HSSFFont                          excel字体
+	HSSFDataFormat                    日期格式
+	HSSFHeader                        sheet头
+	HSSFFooter                        sheet尾（只有打印的时候才能看到效果）
+样式：
+	HSSFCellStyle                       cell样式
+辅助操作包括：
+	HSSFDateUtil                        日期
+	HSSFPrintSetup                      打印
+	HSSFErrorConstants                  错误信息表
+==================================================
+加入jar包
+	将根目录下的poi-3.6-20091214.jar和Lib目录下三个通用包 commons-logging-1.1.jar junit-3.8.1.jar log4j-1.2.13.jar拷贝到项目的Lib下
+	并导入BuildPath
+基本操作步骤：
+	1、用HSSFWorkbook打开或者创建“Excel文件对象”
+	2、用HSSFWorkbook对象返回或者创建Sheet对象
+	3、用Sheet对象返回行对象，用行对象得到Cell对象
+	4、对Cell对象读写。
