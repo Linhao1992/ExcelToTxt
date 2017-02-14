@@ -80,8 +80,8 @@ public class View {
 					for (int i = 0; i < allFiles.length; i++) {
 						if(allFiles[i].endsWith(".xls")){
 							try {
+								//JOptionPane.showMessageDialog(null,dir2+"\\"+allFiles[i]);
 								m.readExcel(dir2+"\\"+allFiles[i]);
-								//JOptionPane.showMessageDialog(null,dir+"\\"+allFiles[i]);
 							} catch (Exception e1) {
 								e1.printStackTrace();
 							}
@@ -140,7 +140,7 @@ public class View {
 		panel.add(button3);
 		panel.add(button5);
 
-		JFrame frame = new JFrame("惠来联社批量转格式工具v1.7");
+		JFrame frame = new JFrame("惠来联社批量转格式工具v1.8");
 		frame.setDefaultCloseOperation(JFrame.EXIT_ON_CLOSE);
 		frame.setSize(300, 120);
 		frame.setContentPane(panel);
